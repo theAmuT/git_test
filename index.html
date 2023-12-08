@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      *{margin:0; padding:0;}
+        ul{list-style:none;}
+        a{
+            color:#000;
+            text-decoration:none;
+        }
+        img{
+            border:0;
+            vertical-align:top;
+        }
 body {
-  background: #2ecc71;
+  background: #93e5b5;
   font-size: 62.5%;
 }
 
@@ -56,11 +66,93 @@ button:hover {
 .btn-2:hover:after {
   width: 100%;
 }
+
+
+
+        .robot{margin-top: 150px;}
+        .robot .hair_group{
+            overflow: hidden;
+            width: 180px; margin:0 auto;
+            /* background-color: antiquewhite;             */
+        }
+        .robot .hair_group .hair{
+            float:left;
+            width: 40px; height: 70px;
+            background-color: rgb(177, 224, 243);
+        }
+        .robot .hair_group .hair:first-child{margin-right: 100px;}
+        .robot .front{
+            overflow: hidden;
+            width: 360px; margin: 0 auto;
+        }
+        .robot .front .ear_left{
+            float:left; 
+            margin-top: 80px;
+            width: 30px; height: 60px;
+            background-color: rgb(0, 157, 255);
+        }
+        .robot .front .face{
+            float:left;
+            width: 300px; height: 250px;
+            background-color: rgb(97, 185, 240);
+        }
+        .robot .front .face .eye_group{overflow: hidden;}
+        .robot .front .face .eye_group .eye{
+            width: 50px; height: 50px;
+            background-color: black;
+            float:left;
+            margin-top: 50px;
+        }
+        .robot .front .face .eye_group .eye:first-child{
+            margin-left: 50px;
+            margin-right: 100px;
+        }
+        .robot .front .face .mouse{
+            overflow: hidden;
+            width:102px; margin: 0 auto;
+            margin-top: 50px;
+        }
+        .robot .front .face .mouse .tooth{
+            float:left;
+            width: 30px; height: 20px;
+            margin: 2px;
+            background-color: antiquewhite;
+        }
+        .robot .front .ear_right{
+            float:left;
+            margin-top: 80px;
+            width: 30px; height: 60px;
+            background-color: rgb(0, 157, 255);
+        }
 </style>
 </head>
 <body>
     <div class="container">
         <button class="btn-2">Button 2</button>
     </div>
+    <div class="robot">
+      <div class="hair_group">
+          <div class="hair"></div>
+          <div class="hair"></div>
+      </div>
+      <div class="front">
+          <div class="ear_left"></div>
+          <div class="face">
+              <div class="eye_group">
+                  <div class="eye"></div>
+                  <div class="eye"></div>
+              </div>                
+              <div class="mouse">
+                  <div class="tooth"></div>
+                  <div class="tooth"></div>
+                  <div class="tooth"></div>
+                  <div class="tooth"></div>
+                  <div class="tooth"></div>
+                  <div class="tooth"></div>
+              </div>
+          </div>
+          <div class="ear_right"></div>
+      </div>
+  </div>
 </body>
 </html>
